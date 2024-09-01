@@ -1,12 +1,14 @@
 // CONF. MODULES \\
 import express from 'express';
 
+import router from './router';
+
 // CONF. \\
 const app = express();
 const PORT = 3000;
 
 // CONF. ROTAS \\
-app.get('/', (req, res) => res.json({ message: 'Hello World!' }));
+app.use(router);
 
 // START SERVIDOR \\
 app.listen(PORT, () => {
