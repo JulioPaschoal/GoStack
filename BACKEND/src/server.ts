@@ -9,6 +9,7 @@ const PORT = 3000;
 
 // CONF. ROTAS \\
 app.use(router);
+app.use(express.json());
 
 // START SERVIDOR \\
 app.listen(PORT, () => {
